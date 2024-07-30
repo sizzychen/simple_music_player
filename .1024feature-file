@@ -1,0 +1,5 @@
+fileChangeLogs:
+  - main.js
+  - README.md
+  - git_contributions.sh
+  - CHANGELOG.md

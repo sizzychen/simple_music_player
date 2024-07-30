@@ -1,0 +1,1 @@
+run_command: "browser-sync start --config .1024config" 

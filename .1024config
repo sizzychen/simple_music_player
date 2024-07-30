@@ -1,0 +1,13 @@
+// @see https://browsersync.io/docs/options/
+module.exports = {
+    "files": ["**/*.css", "**/*.html", "**/*.js"],
+    "watchOptions": {
+      ignore: '.*',
+    },
+    "server": {
+      // baseDir: "src"
+    },
+    "port": 8080,
+    "open": false,
+    "notify": false,
+};
