@@ -3,3 +3,4 @@ fileChangeLogs:
   - README.md
   - git_contributions.sh
   - CHANGELOG.md
+  - '.1024'
