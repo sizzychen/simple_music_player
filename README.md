@@ -59,33 +59,9 @@ PS：README文件将在他人访问该代码空间详情页，或是通过你的
 ![发布](https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/assets/publish.png)
 
 
+## Development Environment Setup
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. Ensure you are running on Ubuntu 20.04.6 LTS or a compatible environment.
+2. Configuration file `.1024` is used to set up the environment.
+3. Set `PORT=8080` and `HOST=0.0.0.0` in the `run_command` parameter in `.1024`.
+4. Additional setup steps can be added here as needed.
