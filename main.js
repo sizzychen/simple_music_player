@@ -101,9 +101,13 @@ function playTrack() {
   playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
 
-// TODO：暂停当前曲目
+// 暂停当前曲目
 function pauseTrack() {
-  // TODO 
+  if (curr_track && !curr_track.paused) {
+    curr_track.pause();
+    isPlaying = false;
+    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+  }
 }
 
 // 下一首
@@ -115,12 +119,13 @@ function nextTrack() {
   playTrack();
 } 
 
-// TODO：上一首
+// 上一首
 function prevTrack() {
-  // 如果当前曲目不是第一首，则把当前曲目改为上一首
-  // 如果当前曲目是第一首，则把当前曲目改为最后一首
-  // 加载当前曲目
-  // 播放当前曲目
+  if (track_index > 0)
+    track_index -= 1;
+  else track_index = track_list.length - 1;
+  loadTrack(track_index);
+  playTrack();
 }
 
 // 设置音乐播放进度条
@@ -152,9 +157,7 @@ function seekUpdate() {
     // TODO：格式化时间为 "mm:ss" 的形式    
 
     // 显示当前时间和总时长
-    curr_time.textContent = currentMinutes + ":" + currentSeconds;
-    total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    curr_time.textContent = currentMinutes + ":" + (currentSeconds < 10 ? '0' + currentSeconds : currentSeconds);
+    total_duration.textContent = durationMinutes + ":" + (durationSeconds < 10 ? '0' + durationSeconds : durationSeconds);
   }
 }
-
-

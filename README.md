@@ -8,14 +8,14 @@
 当前代码是一个半成品，需要你在已有代码基础完成下方三处 `TODO` :
 
 ```
-// TODO：暂停当前曲目
+// 暂停当前曲目
 function pauseTrack() {
-  // TODO 
+  // 实现暂停功能 
 }
 ```
 
 ```
-// TODO：上一首
+// 上一首
 function prevTrack() {
   // 如果当前曲目不是第一首，则把当前曲目改为上一首
   // 如果当前曲目是第一首，则把当前曲目改为最后一首
@@ -29,7 +29,7 @@ function prevTrack() {
 // 更新音乐播放进度条和时间显示
 function seekUpdate() {
   ...
-  // TODO：格式化时间为 "mm:ss" 的形式    
+  // 格式化时间为 "mm:ss" 的形式    
   ...
 }
 ```
@@ -57,35 +57,3 @@ PS：README文件将在他人访问该代码空间详情页，或是通过你的
 ![去发布](https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/assets/gotopublish.pic.jpg)
 
 ![发布](https://1024-staging-1258723534.cos.ap-guangzhou.myqcloud.com/assets/publish.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
