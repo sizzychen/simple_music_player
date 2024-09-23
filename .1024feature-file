@@ -4,3 +4,5 @@ fileChangeLogs:
   - git_contributions.sh
   - CHANGELOG.md
   - '.1024'
+  - package-lock.json
+  - .gitignore
